@@ -1,0 +1,63 @@
+.name-task {
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 60px;
+    width: 550px;
+    background-color: $white-color;
+    border-radius: 15px;
+
+    &__checkbox {
+
+        display: none;
+    }
+
+    &__custom-checkbox {
+        display: inline-block;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        border: 1px double $veryLightGrayishBlue;
+        margin: 20px;
+    }
+
+    &__input {
+
+        border: none;
+        width: 400px;
+
+        font-size: 18px;
+        caret-color: $brightBlue;
+        font-weight: 300;
+
+        &:focus {
+
+            outline: none;
+        }
+    }
+}
+
+@media screen and (max-width: 620px) {
+    main {
+        width: 330px;
+    }
+    
+    .name-task {
+        min-width: fit-content;
+        height: 50px;
+        width: 330px;
+    
+        &__custom-checkbox {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin: 20px;
+            }
+    
+            &__input {
+                width: 220px;
+                font-size: 16px;
+            }
+        }
+    }

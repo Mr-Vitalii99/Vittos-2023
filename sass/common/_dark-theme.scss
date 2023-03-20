@@ -1,0 +1,83 @@
+.dark {
+
+    transition: all 0.4s;
+}
+
+body.dark {
+
+    background: url(../../images/bg-desktop-dark.jpg) no-repeat top;
+    background-color: $veryDarkBlue;
+}
+
+.header__switch__img.dark {
+
+    content: url(../../images/icon-sun.svg);
+}
+
+.name-task.dark {
+
+    background-color: $veryDarkDesaturatedBlue;
+    -webkit-box-shadow: 0 0.563rem 2.25rem -0.75rem #000000;
+    box-shadow: 0 0.563rem 2.25rem -0.75rem #000000;
+}
+
+.name-task__input.dark {
+
+    background-color: $veryDarkDesaturatedBlue;
+    color: $lightGrayishBlue;
+}
+
+.task-list.dark {
+
+    background-color: $veryDarkDesaturatedBlue;
+    color: $lightGrayishBlue;
+    -webkit-box-shadow: 0 0.563rem 2.25rem -0.75rem #000000;
+    box-shadow: 0 0.563rem 2.25rem -0.75rem #000000;
+    .task-list__custom-checkbox {
+            background-image: linear-gradient(transparent, transparent),
+                $checkboxDark-color;
+        }
+}
+
+
+
+.task-list__header.dark {
+
+    background-color: $veryDarkDesaturatedBlue;
+}
+
+.name-task__custom-checkbox.dark {
+
+    border: 1px double $veryDarkGrayishBlue;
+}
+
+
+.footer-list.dark {
+
+    border-top: 2px solid $veryDarkGrayishBlue;
+}
+
+label.dark:hover,
+.footer-list__clear.dark:hover {
+
+    color: $lightGrayishBlue;
+}
+
+.footer-list__filter--mobile.dark {
+
+    background: $veryDarkDesaturatedBlue;
+}
+
+@media screen and (max-width: 620px) {
+    body.dark {
+            background: url(../../images/bg-tablet-dark.jpg) no-repeat top;
+            background-color: $veryDarkBlue;
+        }
+}
+
+@media screen and (max-width: 380px) {
+    body.dark {
+        background: url(../../images/bg-mobile-dark.jpg) no-repeat top;
+        background-color: $veryDarkBlue;
+    }
+}

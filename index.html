@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/vittos-yourself.png">
+
+    <title>Vittos-2023</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="header">
+                <div>
+                    <h1 class="header__title">Vittos-2023</h1>
+                    <p class="header__text">your personal assistant</p>
+                </div>
+                <a href="#" class="header__switch" aria-label="switch_dark_light"><img class="header__switch__img"
+                        src="./images/icon-moon.svg" alt="picture of the moon"></a>
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="name-task">
+                <input class="name-task__checkbox" type="checkbox" name="checkbox" id="check">
+                <label class="name-task__custom-checkbox" for="check"></label>
+                <input class="name-task__input light" type="text" placeholder="Create a new todo...">
+            </div>
+
+            <div class="task-list">
+                <p class="task-list__start-message">No new tasks</p>
+                <div class="task-list__main"></div>
+
+                <div class="footer-list">
+
+                    <div class="footer-list__item"><span class="footer-list__item-counter">0</span> not completed tasks
+                    </div>
+
+                    <div class="footer-list__filter">
+                        <div>
+                            <input type="radio" name="filter" id="all" value="all" checked>
+                            <label id="all-button" class="light" for="all">All</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="filter" id="active" value="active">
+                            <label id="active-button" class="light" for="active">Active</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="filter" id="complete" value="complete">
+                            <label id="completed-button" class="light" for="complete">Completed</label>
+                        </div>
+                    </div>
+
+                    <a class="footer-list__clear">Clear Completed</a>
+
+                </div>
+            </div>
+
+            <!-- MOBILE FOOTER -->
+
+            <div class="footer-list__filter--mobile">
+                <div>
+                    <input type="radio" name="filter" id="all2" value="all" checked>
+                    <label id="all-button-mobile" for="all2">All</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter" id="active2" value="active">
+                    <label id="active-button-mobile" for="active2">Active</label>
+                </div>
+                <div>
+                    <input type="radio" name="filter" id="complete2" value="complete">
+                    <label id="completed-button-mobile" for="complete2">Completed</label>
+                </div>
+            </div>
+
+            <span class="footer-legal-copyright">Copyright &copy; 2023. All rights reserved.</span>
+
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

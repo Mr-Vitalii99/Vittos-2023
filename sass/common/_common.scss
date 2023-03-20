@@ -1,0 +1,53 @@
+*,
+::before,
+::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    width: 100%;
+
+    font-family: $font-Josefin;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: $veryLightGray;
+
+    background: url(../../images/bg-desktop-light.jpg) no-repeat top;
+    transition: all 0.4s;
+}
+
+.container {
+    position: absolute;
+    top: 83px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 33.75rem;
+    
+    
+}
+
+@media screen and (max-width: 620px) {
+    body {
+        background: url(../../images/bg-tablet-light.jpg) no-repeat top;
+        background-color: $veryLightGray;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    body {
+        background: url(../../images/bg-mobile-light.jpg) no-repeat top;
+        background-color: $veryLightGray;
+    }
+}

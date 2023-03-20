@@ -1,0 +1,40 @@
+.header {
+
+    display: inline-flex;
+    justify-content: space-between;
+    min-width: 550px;
+    height: 50px;
+    margin-bottom: 20px;
+
+    &__title {
+
+        color: $white-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 38px;
+    }
+
+    &__text {
+        color: $white-color;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
+
+    @media screen and (max-width: 620px) {
+    .header {
+        min-width: 330px;
+        margin-bottom: 10px;
+    
+        &__title {
+            font-size: 32px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+}
+
+
